@@ -20,7 +20,7 @@ const Panoramic = () => {
   }
   return (
     <div className="w-full flex flex-col items-center">
-        <p className="sm:my-4  my-2 text-center text-gray-700">
+        <p className="sm:my-4  my-2 italic text-center text-gray-700 font-light">
         Swipe on mobile devices or click and drag on desktops to change the view.
       </p>
       <ReactPannellum
@@ -30,7 +30,7 @@ const Panoramic = () => {
         config={config}
         style={style}
       />
-        <p className="sm:mt-4 mt-2 text-center text-gray-700 flex sm:flex-row flex-col items-center">
+        <p className="sm:mt-4 mt-2 italic text-center text-gray-700 flex sm:flex-row flex-col items-center">
         For the best experience, click on 
        
        <p> <span className="inline-flex items-center m-2">
