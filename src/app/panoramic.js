@@ -20,13 +20,13 @@ const Panoramic = () => {
   }
   return (
     <div className="w-full flex flex-col items-center">
-        <p className="sm:mb-4  mb-2 text-center text-gray-700">
+        <p className="sm:my-4  my-2 text-center text-gray-700">
         Swipe on mobile devices or click and drag on desktops to change the view.
       </p>
       <ReactPannellum
         id="1"
         sceneId="firstScene"
-        imageSource="/1.jpg"
+        imageSource="/2.jpg"
         config={config}
         style={style}
       />
@@ -39,7 +39,7 @@ const Panoramic = () => {
         full-screen icon for full width and maximum view.
         </p>
       </p>
-      <div onClick={click}>Click me</div>
+      {/* <div onClick={click}>Click me</div> */}
     </div>
   );
 };
