@@ -10,6 +10,10 @@ const Panoramic = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowHint(false);
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+      });
     }, 5000); // 5 seconds
 
     return () => clearTimeout(timer); // Cleanup the timer
@@ -32,7 +36,7 @@ const Panoramic = () => {
 
   return (
     <div className="w-full flex flex-col items-center">
-      {showHint && (
+      {(
         <p className="sm:my-2 text-sm my-1 italic text-center text-gray-700 font-light">
           Swipe over the image on mobile devices, or click and drag on desktops to change the view.
         </p>
@@ -54,7 +58,7 @@ const Panoramic = () => {
           full-screen icon for full width and maximum view.
         </p>
       </p>
-      <div onClick={click}>Click me</div>
+      {/* <div onClick={click}>Click me</div> */}
     </div>
   );
 };
