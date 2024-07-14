@@ -49,10 +49,10 @@ const Panoramic = () => {
         style={style}
         onPanoramaLoaded={() => console.log('cs')}
       />
-      <p className="sm:mt-4 mt-2 italic text-center text-gray-700 flex sm:flex-row flex-col items-center">
+      <p className="sm:mt-4 mt-2 italic text-center text-gray-700 sm:flex hidden sm:flex-row flex-col items-center ">
         For the best experience, click on 
         <p>
-          <span className="inline-flex items-center m-2">
+          <span className="inline-flex items-center m-2 ">
             <FontAwesomeIcon icon={faExpand} />
           </span>
           full-screen icon for full width and maximum view.
