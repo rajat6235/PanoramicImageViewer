@@ -58,6 +58,7 @@ const Panoramic = () => {
           full-screen icon for full width and maximum view.
         </p>
       </p>
+      <p className="flex sm:hidden my-1"></p>
       {/* <div onClick={click}>Click me</div> */}
     </div>
   );
